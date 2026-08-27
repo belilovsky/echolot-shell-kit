@@ -1,0 +1,12 @@
+{
+  "name": "@echolot/shell-kit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Static, AVDS-adapted primitives for ECHOLOT public shells.",
+  "exports": {
+    "./styles.css": "./src/styles.css",
+    "./locales": "./src/locales.js",
+    "./contracts": "./src/contracts.js"
+  }
+}

@@ -1,0 +1,32 @@
+:root {
+  --echo-ink: #132033;
+  --echo-muted: #596777;
+  --echo-line: #cbd5df;
+  --echo-paper: #f7f8fa;
+  --echo-white: #ffffff;
+  --echo-night: #101c2c;
+  --echo-cyan: #0b8fa6;
+  --echo-gold: #d79432;
+  --echo-danger: #a83936;
+  --echo-radius: 14px;
+  --echo-shadow: 0 12px 32px rgb(19 32 51 / 9%);
+  --echo-font: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { color: var(--echo-ink); background: var(--echo-paper); font-family: var(--echo-font); }
+body { margin: 0; min-width: 320px; }
+button, input, textarea { font: inherit; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--echo-gold); outline-offset: 3px; }
+.shell-container { width: min(1160px, calc(100% - 40px)); margin: 0 auto; }
+.shell-eyebrow { color: var(--echo-cyan); font-size: .76rem; font-weight: 750; letter-spacing: .11em; text-transform: uppercase; }
+.shell-button { align-items: center; background: var(--echo-ink); border: 1px solid var(--echo-ink); border-radius: 7px; color: var(--echo-white); cursor: pointer; display: inline-flex; font-weight: 700; gap: .4rem; justify-content: center; min-height: 44px; padding: .65rem 1rem; text-decoration: none; }
+.shell-button:hover { background: #243754; border-color: #243754; }
+.shell-button--outline { background: transparent; color: var(--echo-ink); }
+.shell-button--outline:hover { background: #e9eef3; }
+.shell-sr-only { height: 1px; margin: -1px; overflow: hidden; position: absolute; width: 1px; clip: rect(0, 0, 0, 0); }
+
+@media (max-width: 680px) {
+  .shell-container { width: min(100% - 28px, 1160px); }
+}
